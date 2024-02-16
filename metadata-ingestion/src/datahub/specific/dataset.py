@@ -301,7 +301,7 @@ class DatasetPatchBuilder(MetadataPatchProposal):
             else EditableDatasetProperties.ASPECT_NAME,
             "add",
             path="/description",
-            value=description,
+            value=quote(description),
         )
         return self
 
